@@ -20,8 +20,8 @@ public class FormDataCaptureController {
 
     @PostMapping("/UploadServlet")
     public String saveData(CandidateDTO candidateInfo){
+        System.out.println("In Controller\n\n\n" + candidateInfo);
         saveFormData.saveData(candidateInfo);
-        System.out.println(candidateInfo);
         return "File Data Saved";
     }
 
