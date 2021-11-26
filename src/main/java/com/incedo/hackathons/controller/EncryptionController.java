@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 public class EncryptionController {
 
     @Autowired
@@ -14,7 +14,7 @@ public class EncryptionController {
     @GetMapping("/post")
     public String encryptFiles(){
         encryptionService.createEncryption2();
-        return "File Saved Successfully";
+        return "File Saved Successfully In Spring JSP";
     }
 
 
